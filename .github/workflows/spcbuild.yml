@@ -1,0 +1,19 @@
+name: SPC - Build
+on:
+  push:
+    branches:
+      - main
+jobs:
+  spcjobid-for-build-action:
+    runs-on: ubuntu-24.04
+    steps:
+       - name: code - checkout
+         uses: actions/checkout@v5
+       - name: Java
+         uses: actions/setup-java@v5
+         with:
+          java-version: '21'
+       - name: Build the spc project
+         run: mvn package
+  
+
