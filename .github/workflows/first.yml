@@ -1,0 +1,12 @@
+name: SPC - First Action
+on:
+  push:
+    branches:
+      - main
+jobs:
+  spcjobid:
+    runs-on: ubuntu 24.04
+    steps:
+      - run: 'echo "Pushed some changes..'
+  
+
