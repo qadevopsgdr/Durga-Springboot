@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   spcjobid:
-    runs-on: ubuntu 24.04
+    runs-on: ubuntu-24.04
     steps:
       - run: 'echo "Pushed some changes..'
   
