@@ -12,6 +12,7 @@ jobs:
        - name: Java
          uses: actions/setup-java@v5
          with:
+          distribution: 'temurin'
           java-version: '21'
        - name: Build the spc project
          run: mvn package
