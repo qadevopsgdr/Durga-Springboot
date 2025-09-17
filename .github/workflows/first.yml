@@ -7,6 +7,6 @@ jobs:
   spcjobid:
     runs-on: ubuntu-24.04
     steps:
-      - run: 'echo "Pushed some changes..'
+      - run: 'echo Pushed some changes..'
   
 
