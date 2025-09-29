@@ -20,8 +20,7 @@ jobs:
        - name: Zip the JAR file
          run: |
           mkdir -p artifacts
-          zip artifacts/my-app.zip target/my-app-1.0.0.jar
-
+          zip artifacts/my-app.zip target/spring-petclinic-3.5.0-SNAPSHOT.jar
        - name: Upload zipped JAR as artifact
          uses: actions/upload-artifact@v4
          with:
