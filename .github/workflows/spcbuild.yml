@@ -16,5 +16,17 @@ jobs:
           java-version: '21'
        - name: Build the spc project
          run: mvn package
+
+       - name: Zip the JAR file
+         run: |
+          mkdir -p artifacts
+          zip artifacts/my-app.zip target/my-app-1.0.0.jar
+
+       - name: Upload zipped JAR as artifact
+         uses: actions/upload-artifact@v4
+         with:
+           name: my-zipped-jar
+           path: artifacts/my-app.zip
+
   
 
